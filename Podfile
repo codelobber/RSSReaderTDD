@@ -3,9 +3,14 @@ platform :ios, '9.0'
 # Pods for RSSReaderTDD
 
 abstract_target 'Tests' do
+    pod 'Typhoon'
+    pod 'RamblerTyphoonUtils', '~> 1.5'
+    pod 'ViperMcFlurry'
 
-    pod 'OCHamcrest', '~> 3.0.0'
-    pod 'OCMockito', '~> 1.1.0'
+    target 'RSSReaderTDDTests' do
+        pod 'OCHamcrest'
+        pod 'OCMock', '~> 3.3'
+    end
 
-    target 'RSSReaderTDDTests'
+    target 'RSSReaderTDD'
 end

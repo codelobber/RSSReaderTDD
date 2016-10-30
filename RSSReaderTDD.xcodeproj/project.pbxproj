@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0883CC3E943BC04FC67156E3 /* libPods-Tests-RSSReaderTDD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C78EC929FE790A9FA2A017C /* libPods-Tests-RSSReaderTDD.a */; };
+		2BDA411CF83A320B7F477E8B /* RSSTableAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D5B18CC24603C453FC8297 /* RSSTableAssembly.m */; };
 		2C55641E1DC60DBD00EB2576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C55641D1DC60DBD00EB2576 /* main.m */; };
 		2C5564211DC60DBD00EB2576 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5564201DC60DBD00EB2576 /* AppDelegate.m */; };
 		2C5564241DC60DBD00EB2576 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5564231DC60DBD00EB2576 /* ViewController.m */; };
@@ -14,7 +16,16 @@
 		2C5564291DC60DBD00EB2576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5564281DC60DBD00EB2576 /* Assets.xcassets */; };
 		2C55642C1DC60DBD00EB2576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C55642A1DC60DBD00EB2576 /* LaunchScreen.storyboard */; };
 		2C5564371DC60DBE00EB2576 /* RSSReaderTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5564361DC60DBE00EB2576 /* RSSReaderTDDTests.m */; };
+		35D48A40E389FAA31D6AA3A7 /* RSSTableRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3DDAA748DAE92A77EC8E97 /* RSSTableRouter.m */; };
+		3D36C2145D50B1CFF3631FF9 /* RSSTableRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 703EB18567632F1DDD83DAA2 /* RSSTableRouterTests.m */; };
+		522CCF6A72BA2B57394156E0 /* RSSTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D92ABABDCAB2AB296046EFA5 /* RSSTableViewControllerTests.m */; };
+		59E272C2ACE6235A7A3563F9 /* RSSTableInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF43D1867E6192D05580B79 /* RSSTableInteractorTests.m */; };
+		9655B557B43FBB4A36223769 /* RSSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7F9BAA50711702E67F404 /* RSSTableViewController.m */; };
+		B12A56452E71A54013C98DAE /* RSSTablePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CA8253F7C4268A2A22456E /* RSSTablePresenter.m */; };
+		BE78854B3F680A30FD35307F /* RSSTableAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515324873EDA36BD2D29C915 /* RSSTableAssemblyTests.m */; };
 		D65D476914AE5420DC9998D5 /* libPods-Tests-RSSReaderTDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E38CAA1AD245BC491969549 /* libPods-Tests-RSSReaderTDDTests.a */; };
+		EA20AB471E6E75464A46C453 /* RSSTablePresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF2A5AABA1417FB2EABCB0D /* RSSTablePresenterTests.m */; };
+		F48F1DA403B532A41A95DE76 /* RSSTableInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2F2CC3E7C4F13ABFC7663D /* RSSTableInteractor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0336F23A695E96B86953352F /* RSSTableViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableViewOutput.h; sourceTree = "<group>"; };
+		16CA8253F7C4268A2A22456E /* RSSTablePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTablePresenter.m; sourceTree = "<group>"; };
+		1DF43D1867E6192D05580B79 /* RSSTableInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableInteractorTests.m; sourceTree = "<group>"; };
+		241FC555380739DCC97CBACB /* RSSTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableViewController.h; sourceTree = "<group>"; };
+		29B232325B17A84F9BCF35BD /* RSSTableViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableViewInput.h; sourceTree = "<group>"; };
 		2C5564191DC60DBD00EB2576 /* RSSReaderTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReaderTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C55641D1DC60DBD00EB2576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C55641F1DC60DBD00EB2576 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,9 +57,29 @@
 		2C5564321DC60DBE00EB2576 /* RSSReaderTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSReaderTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5564361DC60DBE00EB2576 /* RSSReaderTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSReaderTDDTests.m; sourceTree = "<group>"; };
 		2C5564381DC60DBE00EB2576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F2F2CC3E7C4F13ABFC7663D /* RSSTableInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableInteractor.m; sourceTree = "<group>"; };
+		4B5A7069CFF593D182DCA171 /* Pods-Tests-RSSReaderTDD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-RSSReaderTDD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-RSSReaderTDD/Pods-Tests-RSSReaderTDD.debug.xcconfig"; sourceTree = "<group>"; };
+		4CF9DD7F62F659BAEC62DA23 /* RSSTableInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableInteractorInput.h; sourceTree = "<group>"; };
+		515324873EDA36BD2D29C915 /* RSSTableAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableAssemblyTests.m; sourceTree = "<group>"; };
+		58C1152DB021A114260D70B9 /* RSSTableInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableInteractorOutput.h; sourceTree = "<group>"; };
+		5C78EC929FE790A9FA2A017C /* libPods-Tests-RSSReaderTDD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-RSSReaderTDD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD7F9BAA50711702E67F404 /* RSSTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableViewController.m; sourceTree = "<group>"; };
 		5E38CAA1AD245BC491969549 /* libPods-Tests-RSSReaderTDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-RSSReaderTDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF8F20BA52B85C4AF9357C8 /* RSSTableRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableRouterInput.h; sourceTree = "<group>"; };
+		6EEF1C306159F70970D671C5 /* Pods-Tests-RSSReaderTDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-RSSReaderTDD.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-RSSReaderTDD/Pods-Tests-RSSReaderTDD.release.xcconfig"; sourceTree = "<group>"; };
+		703EB18567632F1DDD83DAA2 /* RSSTableRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableRouterTests.m; sourceTree = "<group>"; };
+		8AB849944877016C63E370C2 /* RSSTableRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableRouter.h; sourceTree = "<group>"; };
+		91F2DA2AE39DDA47E1C47EF8 /* RSSTableInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableInteractor.h; sourceTree = "<group>"; };
+		965842D5325185D6F8906A5F /* RSSTableAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableAssembly_Testable.h; sourceTree = "<group>"; };
 		A04EE37412F4FA7B4E242F6F /* Pods-Tests-RSSReaderTDDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-RSSReaderTDDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-RSSReaderTDDTests/Pods-Tests-RSSReaderTDDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3729F9D866F6877A20AF360 /* RSSTablePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTablePresenter.h; sourceTree = "<group>"; };
+		A9D5B18CC24603C453FC8297 /* RSSTableAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableAssembly.m; sourceTree = "<group>"; };
 		AC2525830E929AA8B89DF60B /* Pods-Tests-RSSReaderTDDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-RSSReaderTDDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-RSSReaderTDDTests/Pods-Tests-RSSReaderTDDTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADF2A5AABA1417FB2EABCB0D /* RSSTablePresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTablePresenterTests.m; sourceTree = "<group>"; };
+		CC0CF720632FEF7C08CA63BC /* RSSTableAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableAssembly.h; sourceTree = "<group>"; };
+		D92ABABDCAB2AB296046EFA5 /* RSSTableViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableViewControllerTests.m; sourceTree = "<group>"; };
+		DB3DDAA748DAE92A77EC8E97 /* RSSTableRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableRouter.m; sourceTree = "<group>"; };
+		E2A2ABE22C4EAC15BD326392 /* RSSTableModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableModuleInput.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0883CC3E943BC04FC67156E3 /* libPods-Tests-RSSReaderTDD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D782C645C217D27A7950BD0 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				515324873EDA36BD2D29C915 /* RSSTableAssemblyTests.m */,
+				965842D5325185D6F8906A5F /* RSSTableAssembly_Testable.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		2C5564101DC60DBD00EB2576 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +119,7 @@
 				2C55641A1DC60DBD00EB2576 /* Products */,
 				2F5528B92F1FB116001D151A /* Pods */,
 				53EAAC39F3B9D208529CD1EA /* Frameworks */,
+				E5338B72309AED89BAE20E34 /* modules */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +161,7 @@
 			children = (
 				2C5564361DC60DBE00EB2576 /* RSSReaderTDDTests.m */,
 				2C5564381DC60DBE00EB2576 /* Info.plist */,
+				46EB9A8047AC652867C80052 /* RSSTable */,
 			);
 			path = RSSReaderTDDTests;
 			sourceTree = "<group>";
@@ -123,16 +171,134 @@
 			children = (
 				A04EE37412F4FA7B4E242F6F /* Pods-Tests-RSSReaderTDDTests.debug.xcconfig */,
 				AC2525830E929AA8B89DF60B /* Pods-Tests-RSSReaderTDDTests.release.xcconfig */,
+				4B5A7069CFF593D182DCA171 /* Pods-Tests-RSSReaderTDD.debug.xcconfig */,
+				6EEF1C306159F70970D671C5 /* Pods-Tests-RSSReaderTDD.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4304C9E09953BBBB30303EEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E2A2ABE22C4EAC15BD326392 /* RSSTableModuleInput.h */,
+				A3729F9D866F6877A20AF360 /* RSSTablePresenter.h */,
+				16CA8253F7C4268A2A22456E /* RSSTablePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46EB9A8047AC652867C80052 /* RSSTable */ = {
+			isa = PBXGroup;
+			children = (
+				1D782C645C217D27A7950BD0 /* Assembly */,
+				57DB9180BCC98490719DD8B5 /* View */,
+				5D6A6765007FB9169A30C4EB /* Presenter */,
+				C96C19A4C6AD64D2E76D3747 /* Interactor */,
+				48C735EC5956EF1EBE07108E /* Router */,
+			);
+			path = RSSTable;
+			sourceTree = "<group>";
+		};
+		48C735EC5956EF1EBE07108E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				703EB18567632F1DDD83DAA2 /* RSSTableRouterTests.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		53EAAC39F3B9D208529CD1EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5E38CAA1AD245BC491969549 /* libPods-Tests-RSSReaderTDDTests.a */,
+				5C78EC929FE790A9FA2A017C /* libPods-Tests-RSSReaderTDD.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57DB9180BCC98490719DD8B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D92ABABDCAB2AB296046EFA5 /* RSSTableViewControllerTests.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D6A6765007FB9169A30C4EB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ADF2A5AABA1417FB2EABCB0D /* RSSTablePresenterTests.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		676B0002CC245C69D24014CB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6AF8F20BA52B85C4AF9357C8 /* RSSTableRouterInput.h */,
+				8AB849944877016C63E370C2 /* RSSTableRouter.h */,
+				DB3DDAA748DAE92A77EC8E97 /* RSSTableRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9404E6CB940FEC27F1F55E0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29B232325B17A84F9BCF35BD /* RSSTableViewInput.h */,
+				0336F23A695E96B86953352F /* RSSTableViewOutput.h */,
+				241FC555380739DCC97CBACB /* RSSTableViewController.h */,
+				5DD7F9BAA50711702E67F404 /* RSSTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C0672492B1104C3497FA24D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CC0CF720632FEF7C08CA63BC /* RSSTableAssembly.h */,
+				A9D5B18CC24603C453FC8297 /* RSSTableAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		A48F050934D1FD30732C8536 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9DD7F62F659BAEC62DA23 /* RSSTableInteractorInput.h */,
+				58C1152DB021A114260D70B9 /* RSSTableInteractorOutput.h */,
+				91F2DA2AE39DDA47E1C47EF8 /* RSSTableInteractor.h */,
+				3F2F2CC3E7C4F13ABFC7663D /* RSSTableInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C96C19A4C6AD64D2E76D3747 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1DF43D1867E6192D05580B79 /* RSSTableInteractorTests.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C96DD3ECC4935CE7247C0995 /* RSSTable */ = {
+			isa = PBXGroup;
+			children = (
+				9C0672492B1104C3497FA24D /* Assembly */,
+				9404E6CB940FEC27F1F55E0F /* View */,
+				4304C9E09953BBBB30303EEF /* Presenter */,
+				A48F050934D1FD30732C8536 /* Interactor */,
+				676B0002CC245C69D24014CB /* Router */,
+			);
+			path = RSSTable;
+			sourceTree = "<group>";
+		};
+		E5338B72309AED89BAE20E34 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				C96DD3ECC4935CE7247C0995 /* RSSTable */,
+			);
+			path = modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C55643B1DC60DBE00EB2576 /* Build configuration list for PBXNativeTarget "RSSReaderTDD" */;
 			buildPhases = (
+				4375EAF191153D37B4394E30 /* [CP] Check Pods Manifest.lock */,
 				2C5564151DC60DBD00EB2576 /* Sources */,
 				2C5564161DC60DBD00EB2576 /* Frameworks */,
 				2C5564171DC60DBD00EB2576 /* Resources */,
+				CE0B395C2C60FFCD9E48492C /* [CP] Embed Pods Frameworks */,
+				703B976691E80DAE5EC5FF4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +436,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-RSSReaderTDDTests/Pods-Tests-RSSReaderTDDTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4375EAF191153D37B4394E30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		703B976691E80DAE5EC5FF4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-RSSReaderTDD/Pods-Tests-RSSReaderTDD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A6197395E8541864AA2760CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +481,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		CE0B395C2C60FFCD9E48492C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-RSSReaderTDD/Pods-Tests-RSSReaderTDD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -292,6 +506,11 @@
 				2C5564241DC60DBD00EB2576 /* ViewController.m in Sources */,
 				2C5564211DC60DBD00EB2576 /* AppDelegate.m in Sources */,
 				2C55641E1DC60DBD00EB2576 /* main.m in Sources */,
+				2BDA411CF83A320B7F477E8B /* RSSTableAssembly.m in Sources */,
+				9655B557B43FBB4A36223769 /* RSSTableViewController.m in Sources */,
+				B12A56452E71A54013C98DAE /* RSSTablePresenter.m in Sources */,
+				F48F1DA403B532A41A95DE76 /* RSSTableInteractor.m in Sources */,
+				35D48A40E389FAA31D6AA3A7 /* RSSTableRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +519,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5564371DC60DBE00EB2576 /* RSSReaderTDDTests.m in Sources */,
+				BE78854B3F680A30FD35307F /* RSSTableAssemblyTests.m in Sources */,
+				522CCF6A72BA2B57394156E0 /* RSSTableViewControllerTests.m in Sources */,
+				EA20AB471E6E75464A46C453 /* RSSTablePresenterTests.m in Sources */,
+				59E272C2ACE6235A7A3563F9 /* RSSTableInteractorTests.m in Sources */,
+				3D36C2145D50B1CFF3631FF9 /* RSSTableRouterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +647,7 @@
 		};
 		2C55643C1DC60DBE00EB2576 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5A7069CFF593D182DCA171 /* Pods-Tests-RSSReaderTDD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LX5AYDQ4YD;
@@ -435,6 +660,7 @@
 		};
 		2C55643D1DC60DBE00EB2576 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EEF1C306159F70970D671C5 /* Pods-Tests-RSSReaderTDD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LX5AYDQ4YD;

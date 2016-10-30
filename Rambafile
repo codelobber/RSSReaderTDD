@@ -1,0 +1,32 @@
+### Headers settings
+company: we
+
+### Xcode project settings
+project_name: RSSReaderTDD
+xcodeproj_path: RSSReaderTDD.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: RSSReaderTDD
+
+# The file path for new modules
+project_file_path: modules/
+
+# The Xcode group path to new modules
+project_group_path: modules/
+
+### Tests generation settings section
+# The tests target name
+test_target: RSSReaderTDDTests
+
+test_file_path: RSSReaderTDDTests/
+test_group_path: RSSReaderTDDTests/
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}
