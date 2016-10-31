@@ -3,7 +3,7 @@
 
 @protocol RSSLoaderInput <NSObject>
 
-- (void) loadRSSFromUrl:(NSString * _Nonnull) urlString;
+- (void) loadRSSFromUrl:(NSString * _Nonnull) urlString withAlias:(NSString * _Nonnull) alias;
 
 @end
 
@@ -28,8 +28,6 @@
 
 @property (nullable, nonatomic, weak) id <RSSLoaderOutput> output;
 @property (nullable, nonatomic, weak) id <RSSXMLParserInput,NSXMLParserDelegate> parser;
-
-- (void) parseData:(NSData *) data;
 
 @end
 

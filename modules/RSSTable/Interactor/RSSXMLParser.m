@@ -8,11 +8,15 @@
 }
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser{
-    [self.delegate didFinishParsingArray:[NSArray arrayWithArray:_news]];
-    
-    _news = nil;
+    parser.delegate = nil;
     _currentValue = nil;
     _newsThing = nil;
+    
+    [self.delegate didFinishParsingArray:[NSArray arrayWithArray:_news]];
+}
+
+- (NSArray *)getParsedArray{
+    return _news;
 }
 
 -(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError{
@@ -32,6 +36,7 @@
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     
     if ([elementName isEqualToString:@"item"]) {
+        _newsThing.source = _alias;
         [_news addObject:_newsThing];
     } else if ([elementName isEqualToString:@"title"]) {
         _newsThing.title = _currentValue;
@@ -50,6 +55,10 @@
     string = [string stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     _currentValue = [_currentValue stringByAppendingString:string];
     
+}
+
+- (void)setAlias:(NSString *)alias{
+    _alias = alias;
 }
 
 @end

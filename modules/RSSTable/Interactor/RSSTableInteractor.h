@@ -16,5 +16,8 @@
 @property (nonatomic, weak) id <RSSTableInteractorOutput> output;
 @property (nonatomic, weak) id <RSSLoaderInput> rssloader;
 
+@property (nonatomic, strong) NSArray * urlsToLoad;
+@property (nonatomic, strong) NSArray * urlsAlias;
+@property (nonatomic, strong) NSArray * newsArray;
 
 @end

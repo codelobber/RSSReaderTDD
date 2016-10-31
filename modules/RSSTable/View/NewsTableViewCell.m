@@ -41,7 +41,10 @@
 - (void) loadNews:(NewsThing *) newsThing{
     [_titleLabel setText:newsThing.title];
     [_descLabel setText:newsThing.text];
-
+    [_copyrighLabel setText:newsThing.source];
+    
+    [self fitAndResize:_titleLabel];
+    [self fitAndResize:_descLabel];
 
     _maxSize = [self getMaxSize];
     
@@ -60,6 +63,13 @@
             });
         });
     }
+}
+
+- (void) fitAndResize:(UILabel *) label{
+    CGRect frame = [label frame];
+    [label sizeToFit];
+    frame.size.height = [label frame].size.height;
+    [label setFrame:frame];
 }
 
 @end

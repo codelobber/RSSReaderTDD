@@ -3,6 +3,10 @@
 
 @protocol RSSXMLParserInput <NSObject>
 
+- (NSArray *) getParsedArray;
+
+- (void) setAlias:(NSString *) alias;
+
 @end
 
 @protocol RSSXMLParserDelegate <NSObject>
@@ -19,13 +23,13 @@
  */
 - (void) didFinishParsingArray:(NSArray * _Nonnull) arrayXML;
 
-
 @end
 
 @interface RSSXMLParser : NSObject <NSXMLParserDelegate,RSSXMLParserInput>
 
 @property (nullable,nonatomic,strong) NSMutableArray * news;
 @property (nullable,nonatomic,strong) NSString * currentValue;
+@property (nullable,nonatomic,strong) NSString * alias;
 @property (nullable,nonatomic,strong) NewsThing * newsThing;
 @property (nullable,nonatomic,weak) id <RSSXMLParserDelegate> delegate;
 
