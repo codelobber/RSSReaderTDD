@@ -9,15 +9,26 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "NewsTableViewCell.h"
+#import "NewsThing.h"
 
 @protocol NewsTableInput
 
+/**
+ @author lets Code
+ 
+ Метод Вызывается для обновления данных таблицы
+ */
 - (void) reloadNewArray:(NSArray * _Nonnull) newData;
 
 @end
 
 @protocol NewsTableOutput
 
+/**
+ @author lets Code
+ 
+ Метод сообщает Вью о необходимости перезагрузить таблицу
+ */
 - (void) updateNewsTable;
 
 @end
@@ -25,7 +36,6 @@
 @interface NewsTableManger : NSObject <NewsTableInput,UITableViewDelegate,UITableViewDataSource>
 
 @property (nullable,nonatomic,strong) NSArray * news;
-@property (nullable,nonatomic,strong) NSMutableDictionary * rowsMaxHeight;
 @property (nullable,nonatomic,weak) NSIndexPath * currentSelectedCell;
 
 @property (nonatomic, weak) id<NewsTableOutput> output;

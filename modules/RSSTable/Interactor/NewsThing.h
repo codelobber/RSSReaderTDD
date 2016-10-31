@@ -6,5 +6,6 @@
 @property (nullable,strong,nonatomic) NSDate * date;
 @property (nullable,strong,nonatomic) NSString * url;
 @property (nullable,strong,nonatomic) NSString * text;
+@property (nonatomic) float descriptionHeight;
 
 @end

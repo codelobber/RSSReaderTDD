@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewsThing.h"
 
 @interface NewsTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *image;

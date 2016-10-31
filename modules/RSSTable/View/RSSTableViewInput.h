@@ -17,4 +17,11 @@
  */
 - (void)setupInitialState;
 
+/**
+ @author lets Code
+ 
+ Метод обновляет таблицу новостей
+ */
+- (void)updateNewsData:(NSArray *) news;
+
 @end

@@ -10,5 +10,11 @@
 
 @protocol RSSTableInteractorInput <NSObject>
 
+/**
+ @author lets Code
+ 
+ Метод инициирует загрузку новостей со всех RSS каналов
+ */
+- (void) loadAllRSSChanel;
 
 @end

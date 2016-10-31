@@ -9,23 +9,20 @@
 /* Begin PBXBuildFile section */
 		0883CC3E943BC04FC67156E3 /* libPods-Tests-RSSReaderTDD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C78EC929FE790A9FA2A017C /* libPods-Tests-RSSReaderTDD.a */; };
 		2BDA411CF83A320B7F477E8B /* RSSTableAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D5B18CC24603C453FC8297 /* RSSTableAssembly.m */; };
+		2C17FC321DC70BBF00005F03 /* NewsThing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17FC2D1DC70BBF00005F03 /* NewsThing.m */; };
+		2C17FC331DC70BBF00005F03 /* RSSLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17FC2F1DC70BBF00005F03 /* RSSLoader.m */; };
+		2C17FC341DC70BBF00005F03 /* RSSXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17FC311DC70BBF00005F03 /* RSSXMLParser.m */; };
+		2C17FC381DC70C1B00005F03 /* RSSLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17FC361DC70C1B00005F03 /* RSSLoaderTests.m */; };
+		2C17FC391DC70C1B00005F03 /* RSSXMLParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17FC371DC70C1B00005F03 /* RSSXMLParserTests.m */; };
+		2C17FC3C1DC70C5E00005F03 /* demoRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2C17FC3A1DC70C4F00005F03 /* demoRSS.xml */; };
 		2C55641E1DC60DBD00EB2576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C55641D1DC60DBD00EB2576 /* main.m */; };
 		2C5564211DC60DBD00EB2576 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5564201DC60DBD00EB2576 /* AppDelegate.m */; };
 		2C5564271DC60DBD00EB2576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5564251DC60DBD00EB2576 /* Main.storyboard */; };
 		2C5564291DC60DBD00EB2576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5564281DC60DBD00EB2576 /* Assets.xcassets */; };
 		2C55642C1DC60DBD00EB2576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C55642A1DC60DBD00EB2576 /* LaunchScreen.storyboard */; };
 		2C5564371DC60DBE00EB2576 /* RSSReaderTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5564361DC60DBE00EB2576 /* RSSReaderTDDTests.m */; };
-<<<<<<< HEAD
-		2CD535D81DC690F500995EB9 /* RSSLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535D71DC690F500995EB9 /* RSSLoader.m */; };
-		2CD535DC1DC6941000995EB9 /* RSSLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535DB1DC6941000995EB9 /* RSSLoaderTests.m */; };
-		2CD535E21DC6975800995EB9 /* RSSXMLParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535E11DC6975800995EB9 /* RSSXMLParserTests.m */; };
-		2CD535E91DC6B5A100995EB9 /* NewsThing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535E81DC6B5A100995EB9 /* NewsThing.m */; };
-		2CD535EA1DC6D2DB00995EB9 /* RSSXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535DE1DC6966A00995EB9 /* RSSXMLParser.m */; };
-		2CD535ED1DC6F44D00995EB9 /* demoRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2CD535EB1DC6F43C00995EB9 /* demoRSS.xml */; };
-=======
 		2CD535F21DC7004A00995EB9 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535F11DC7004A00995EB9 /* NewsTableViewCell.m */; };
 		2CD535F51DC7020000995EB9 /* NewsTableManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535F41DC7020000995EB9 /* NewsTableManger.m */; };
->>>>>>> feature/GUI
 		35D48A40E389FAA31D6AA3A7 /* RSSTableRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3DDAA748DAE92A77EC8E97 /* RSSTableRouter.m */; };
 		3D36C2145D50B1CFF3631FF9 /* RSSTableRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 703EB18567632F1DDD83DAA2 /* RSSTableRouterTests.m */; };
 		522CCF6A72BA2B57394156E0 /* RSSTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D92ABABDCAB2AB296046EFA5 /* RSSTableViewControllerTests.m */; };
@@ -54,6 +51,15 @@
 		1DF43D1867E6192D05580B79 /* RSSTableInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableInteractorTests.m; sourceTree = "<group>"; };
 		241FC555380739DCC97CBACB /* RSSTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableViewController.h; sourceTree = "<group>"; };
 		29B232325B17A84F9BCF35BD /* RSSTableViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableViewInput.h; sourceTree = "<group>"; };
+		2C17FC2C1DC70BBF00005F03 /* NewsThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsThing.h; sourceTree = "<group>"; };
+		2C17FC2D1DC70BBF00005F03 /* NewsThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsThing.m; sourceTree = "<group>"; };
+		2C17FC2E1DC70BBF00005F03 /* RSSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSLoader.h; sourceTree = "<group>"; };
+		2C17FC2F1DC70BBF00005F03 /* RSSLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSLoader.m; sourceTree = "<group>"; };
+		2C17FC301DC70BBF00005F03 /* RSSXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSXMLParser.h; sourceTree = "<group>"; };
+		2C17FC311DC70BBF00005F03 /* RSSXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSXMLParser.m; sourceTree = "<group>"; };
+		2C17FC361DC70C1B00005F03 /* RSSLoaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSLoaderTests.m; sourceTree = "<group>"; };
+		2C17FC371DC70C1B00005F03 /* RSSXMLParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSXMLParserTests.m; sourceTree = "<group>"; };
+		2C17FC3A1DC70C4F00005F03 /* demoRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = demoRSS.xml; path = ../../../../../Desktop/demoRSS.xml; sourceTree = "<group>"; };
 		2C5564191DC60DBD00EB2576 /* RSSReaderTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReaderTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C55641D1DC60DBD00EB2576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C55641F1DC60DBD00EB2576 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,22 +71,10 @@
 		2C5564321DC60DBE00EB2576 /* RSSReaderTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSReaderTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5564361DC60DBE00EB2576 /* RSSReaderTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSReaderTDDTests.m; sourceTree = "<group>"; };
 		2C5564381DC60DBE00EB2576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		2CD535D61DC690F500995EB9 /* RSSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSLoader.h; sourceTree = "<group>"; };
-		2CD535D71DC690F500995EB9 /* RSSLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSLoader.m; sourceTree = "<group>"; };
-		2CD535DB1DC6941000995EB9 /* RSSLoaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSLoaderTests.m; sourceTree = "<group>"; };
-		2CD535DD1DC6966A00995EB9 /* RSSXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSXMLParser.h; sourceTree = "<group>"; };
-		2CD535DE1DC6966A00995EB9 /* RSSXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSXMLParser.m; sourceTree = "<group>"; };
-		2CD535E11DC6975800995EB9 /* RSSXMLParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSXMLParserTests.m; sourceTree = "<group>"; };
-		2CD535E71DC6B5A100995EB9 /* NewsThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsThing.h; sourceTree = "<group>"; };
-		2CD535E81DC6B5A100995EB9 /* NewsThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsThing.m; sourceTree = "<group>"; };
-		2CD535EB1DC6F43C00995EB9 /* demoRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = demoRSS.xml; path = ../../../../../Desktop/demoRSS.xml; sourceTree = "<group>"; };
-=======
 		2CD535F01DC7004A00995EB9 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
 		2CD535F11DC7004A00995EB9 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		2CD535F31DC7020000995EB9 /* NewsTableManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableManger.h; sourceTree = "<group>"; };
 		2CD535F41DC7020000995EB9 /* NewsTableManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableManger.m; sourceTree = "<group>"; };
->>>>>>> feature/GUI
 		3F2F2CC3E7C4F13ABFC7663D /* RSSTableInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableInteractor.m; sourceTree = "<group>"; };
 		4B5A7069CFF593D182DCA171 /* Pods-Tests-RSSReaderTDD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-RSSReaderTDD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-RSSReaderTDD/Pods-Tests-RSSReaderTDD.debug.xcconfig"; sourceTree = "<group>"; };
 		4CF9DD7F62F659BAEC62DA23 /* RSSTableInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableInteractorInput.h; sourceTree = "<group>"; };
@@ -135,6 +129,19 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		2C17FC351DC70BC400005F03 /* RSSLoader */ = {
+			isa = PBXGroup;
+			children = (
+				2C17FC2C1DC70BBF00005F03 /* NewsThing.h */,
+				2C17FC2D1DC70BBF00005F03 /* NewsThing.m */,
+				2C17FC2E1DC70BBF00005F03 /* RSSLoader.h */,
+				2C17FC2F1DC70BBF00005F03 /* RSSLoader.m */,
+				2C17FC301DC70BBF00005F03 /* RSSXMLParser.h */,
+				2C17FC311DC70BBF00005F03 /* RSSXMLParser.m */,
+			);
+			name = RSSLoader;
+			sourceTree = "<group>";
+		};
 		2C5564101DC60DBD00EB2576 = {
 			isa = PBXGroup;
 			children = (
@@ -163,8 +170,6 @@
 				2C5564201DC60DBD00EB2576 /* AppDelegate.m */,
 				2C5564251DC60DBD00EB2576 /* Main.storyboard */,
 				2C5564281DC60DBD00EB2576 /* Assets.xcassets */,
-				2C55642A1DC60DBD00EB2576 /* LaunchScreen.storyboard */,
-				2C55642D1DC60DBD00EB2576 /* Info.plist */,
 				2C55641C1DC60DBD00EB2576 /* Supporting Files */,
 			);
 			path = RSSReaderTDD;
@@ -173,7 +178,9 @@
 		2C55641C1DC60DBD00EB2576 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2CD535EB1DC6F43C00995EB9 /* demoRSS.xml */,
+				2C55642A1DC60DBD00EB2576 /* LaunchScreen.storyboard */,
+				2C55642D1DC60DBD00EB2576 /* Info.plist */,
+				2C17FC3A1DC70C4F00005F03 /* demoRSS.xml */,
 				2C55641D1DC60DBD00EB2576 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -189,28 +196,6 @@
 			path = RSSReaderTDDTests;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		2CD535D51DC690CB00995EB9 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				2CD535DD1DC6966A00995EB9 /* RSSXMLParser.h */,
-				2CD535DE1DC6966A00995EB9 /* RSSXMLParser.m */,
-				2CD535D61DC690F500995EB9 /* RSSLoader.h */,
-				2CD535D71DC690F500995EB9 /* RSSLoader.m */,
-				2CD535E71DC6B5A100995EB9 /* NewsThing.h */,
-				2CD535E81DC6B5A100995EB9 /* NewsThing.m */,
-			);
-			name = Services;
-			sourceTree = "<group>";
-		};
-		2CD535D91DC6910600995EB9 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				2CD535DB1DC6941000995EB9 /* RSSLoaderTests.m */,
-				2CD535E11DC6975800995EB9 /* RSSXMLParserTests.m */,
-			);
-			name = Services;
-=======
 		2CD535EE1DC6FF6E00995EB9 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,7 +212,6 @@
 				2CD535F41DC7020000995EB9 /* NewsTableManger.m */,
 			);
 			name = NewsTable;
->>>>>>> feature/GUI
 			sourceTree = "<group>";
 		};
 		2F5528B92F1FB116001D151A /* Pods */ = {
@@ -331,7 +315,7 @@
 		A48F050934D1FD30732C8536 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				2CD535D51DC690CB00995EB9 /* Services */,
+				2C17FC351DC70BC400005F03 /* RSSLoader */,
 				4CF9DD7F62F659BAEC62DA23 /* RSSTableInteractorInput.h */,
 				58C1152DB021A114260D70B9 /* RSSTableInteractorOutput.h */,
 				91F2DA2AE39DDA47E1C47EF8 /* RSSTableInteractor.h */,
@@ -343,7 +327,8 @@
 		C96C19A4C6AD64D2E76D3747 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				2CD535D91DC6910600995EB9 /* Services */,
+				2C17FC361DC70C1B00005F03 /* RSSLoaderTests.m */,
+				2C17FC371DC70C1B00005F03 /* RSSXMLParserTests.m */,
 				1DF43D1867E6192D05580B79 /* RSSTableInteractorTests.m */,
 			);
 			path = Interactor;
@@ -468,7 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD535ED1DC6F44D00995EB9 /* demoRSS.xml in Resources */,
+				2C17FC3C1DC70C5E00005F03 /* demoRSS.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,22 +557,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD535EA1DC6D2DB00995EB9 /* RSSXMLParser.m in Sources */,
 				2C5564211DC60DBD00EB2576 /* AppDelegate.m in Sources */,
+				2C17FC331DC70BBF00005F03 /* RSSLoader.m in Sources */,
 				2C55641E1DC60DBD00EB2576 /* main.m in Sources */,
 				2BDA411CF83A320B7F477E8B /* RSSTableAssembly.m in Sources */,
 				9655B557B43FBB4A36223769 /* RSSTableViewController.m in Sources */,
 				B12A56452E71A54013C98DAE /* RSSTablePresenter.m in Sources */,
-<<<<<<< HEAD
-				2CD535D81DC690F500995EB9 /* RSSLoader.m in Sources */,
-				F48F1DA403B532A41A95DE76 /* RSSTableInteractor.m in Sources */,
-				2CD535E91DC6B5A100995EB9 /* NewsThing.m in Sources */,
-=======
 				2CD535F51DC7020000995EB9 /* NewsTableManger.m in Sources */,
 				F48F1DA403B532A41A95DE76 /* RSSTableInteractor.m in Sources */,
 				2CD535F21DC7004A00995EB9 /* NewsTableViewCell.m in Sources */,
->>>>>>> feature/GUI
 				35D48A40E389FAA31D6AA3A7 /* RSSTableRouter.m in Sources */,
+				2C17FC321DC70BBF00005F03 /* NewsThing.m in Sources */,
+				2C17FC341DC70BBF00005F03 /* RSSXMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,9 +581,9 @@
 				522CCF6A72BA2B57394156E0 /* RSSTableViewControllerTests.m in Sources */,
 				EA20AB471E6E75464A46C453 /* RSSTablePresenterTests.m in Sources */,
 				59E272C2ACE6235A7A3563F9 /* RSSTableInteractorTests.m in Sources */,
-				2CD535E21DC6975800995EB9 /* RSSXMLParserTests.m in Sources */,
-				2CD535DC1DC6941000995EB9 /* RSSLoaderTests.m in Sources */,
+				2C17FC381DC70C1B00005F03 /* RSSLoaderTests.m in Sources */,
 				3D36C2145D50B1CFF3631FF9 /* RSSTableRouterTests.m in Sources */,
+				2C17FC391DC70C1B00005F03 /* RSSXMLParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,7 +50,7 @@
     NSArray * testArray = nil;
     
     // when
-    [self.interactor parse];
+    [self.interactor loadAllRSSChanel];
     
     
     // then

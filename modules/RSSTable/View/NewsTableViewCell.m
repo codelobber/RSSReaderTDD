@@ -21,7 +21,6 @@
     // Configure the view for the selected state
 }
 
-
 - (CGSize) getMaxSize{
     CGRect frame = _descLabel.frame;
     frame.size.height = [_descLabel sizeThatFits:CGSizeMake(_descLabel.frame.size.width, MAXFLOAT)].height;
@@ -34,6 +33,11 @@
     return size;
 }
 
+/**
+ @author lets Code
+ 
+ Метод подставляет данные в ячейку
+ */
 - (void) loadNews:(NewsThing *) newsThing{
     [_titleLabel setText:newsThing.title];
     [_descLabel setText:newsThing.text];

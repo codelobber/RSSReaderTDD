@@ -35,7 +35,7 @@
 #pragma mark - Тестирование методов RSSLoader
 
 // проверить статусы ошибок
-//- (void) testError{
+//- (void) testThatCauseNetworkError{
 //    // given
 //    NSString * url = @"qqw";
 //    NSError * error = nil;
@@ -49,7 +49,7 @@
 //    OCMVerify([self.mockOutput didReciveError:error]);
 //}
 
-- (void) testError{
+- (void) testThatParseDemoXML{
     // given
     NSArray * array  = @[];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"demoRSS" ofType:@"xml"];

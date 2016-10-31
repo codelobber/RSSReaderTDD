@@ -24,8 +24,13 @@
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
+    [self.interactor loadAllRSSChanel];
 }
 
 #pragma mark - Методы RSSTableInteractorOutput
+
+- (void)allRSSChanelLoadedInArray:(NSArray *)array{
+    [self.view updateNewsData:array];
+}
 
 @end

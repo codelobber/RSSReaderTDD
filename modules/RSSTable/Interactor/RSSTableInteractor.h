@@ -16,6 +16,5 @@
 @property (nonatomic, weak) id <RSSTableInteractorOutput> output;
 @property (nonatomic, weak) id <RSSLoaderInput> rssloader;
 
-- (void) parse;
 
 @end

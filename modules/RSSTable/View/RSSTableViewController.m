@@ -24,6 +24,18 @@
 
 - (void)setupInitialState {
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+    _newsTable.dataSource = _tableView;
+    _newsTable.delegate = _tableView;
+}
+
+- (void)updateNewsData:(NSArray *)news{
+    [_tableView reloadNewArray:news];
+}
+
+#pragma mark - Методы NewsTableOutput
+
+- (void)updateNewsTable{
+    [_newsTable reloadData];
 }
 
 @end

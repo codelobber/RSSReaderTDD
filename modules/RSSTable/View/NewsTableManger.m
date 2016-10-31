@@ -12,7 +12,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if(_currentSelectedCell == indexPath){
-        return [(NSNumber *)[_rowsMaxHeight objectForKey:indexPath] floatValue];
+        return ((NewsThing *)[_news objectAtIndex:indexPath.row]).descriptionHeight;
     }
     return 110.0;
 }
@@ -28,12 +28,17 @@
     if (cell == nil) {
         cell = [[NewsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    [cell loadNews:[_news objectAtIndex:indexPath.row]];
-    [_rowsMaxHeight setObject:[NSNumber numberWithFloat:cell.maxSize.height] forKey:indexPath];
+    
+    NewsThing * topic = [_news objectAtIndex:indexPath.row];
+    [cell loadNews:topic];
+    topic.descriptionHeight = cell.maxSize.height;
     return cell;
 }
 
-
+- (void) reloadNewArray:(NSArray * _Nonnull) newData{
+    _news = newData;
+    [self updateTable];
+}
 
 - (void) updateTable {
     [self.output updateNewsTable];

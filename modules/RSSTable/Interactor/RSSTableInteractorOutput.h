@@ -10,4 +10,11 @@
 
 @protocol RSSTableInteractorOutput <NSObject>
 
+/**
+ @author lets Code
+ 
+ Метод отдает презентеру масив загружженых новостей слитых в один массив
+ */
+- (void) allRSSChanelLoadedInArray:(NSArray *) array;
+
 @end
