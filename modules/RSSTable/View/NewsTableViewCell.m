@@ -62,6 +62,9 @@
                 
             });
         });
+    } else {
+        _image.contentMode = UIViewContentModeScaleAspectFill;
+        [_image setImage:[UIImage imageNamed:@"blank.png"]];
     }
 }
 

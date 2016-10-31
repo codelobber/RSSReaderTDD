@@ -30,6 +30,9 @@
 #pragma mark - Методы RSSTableInteractorOutput
 
 - (void)allRSSChanelLoadedInArray:(NSArray *)array{
+    NSSortDescriptor *valueDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
+    NSArray *descriptors = [NSArray arrayWithObject:valueDescriptor];
+    array = [array sortedArrayUsingDescriptors:descriptors];
     [self.view updateNewsData:array];
 }
 

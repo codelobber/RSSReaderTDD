@@ -47,7 +47,11 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    self.selectedRow = indexPath.row;
+    if(self.selectedRow == indexPath.row){
+        self.selectedRow = -1;
+    } else {
+        self.selectedRow = indexPath.row;
+    }
     [tableView beginUpdates];
     [tableView endUpdates];
 }
