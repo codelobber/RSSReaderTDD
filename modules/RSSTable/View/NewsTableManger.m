@@ -11,7 +11,7 @@
 @implementation NewsTableManger
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if(_currentSelectedCell == indexPath){
+    if(self.selectedRow == indexPath.row){
         return ((NewsThing *)[_news objectAtIndex:indexPath.row]).descriptionHeight;
     }
     return 110.0;
@@ -36,6 +36,7 @@
 }
 
 - (void) reloadNewArray:(NSArray * _Nonnull) newData{
+    self.selectedRow = -1;
     _news = newData;
     [self updateTable];
 }
@@ -46,7 +47,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    _currentSelectedCell = indexPath;
+    self.selectedRow = indexPath.row;
     [tableView beginUpdates];
     [tableView endUpdates];
 }

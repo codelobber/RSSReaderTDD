@@ -36,7 +36,7 @@
 @interface NewsTableManger : NSObject <NewsTableInput,UITableViewDelegate,UITableViewDataSource>
 
 @property (nullable,nonatomic,strong) NSArray * news;
-@property (nullable,nonatomic,weak) NSIndexPath * currentSelectedCell;
+@property (nonatomic) NSInteger selectedRow;
 
 @property (nonatomic, weak) id<NewsTableOutput> output;
 

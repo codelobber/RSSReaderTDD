@@ -42,6 +42,7 @@
     [_titleLabel setText:newsThing.title];
     [_descLabel setText:newsThing.text];
 
+
     _maxSize = [self getMaxSize];
     
     

@@ -16,7 +16,7 @@
 @interface RSSTableViewController : UIViewController <RSSTableViewInput,NewsTableOutput>
 
 @property (nonatomic, strong) id<RSSTableViewOutput> output;
-@property (nonatomic, strong) id<NewsTableInput> tableView;
+@property (nonatomic, strong) id<UITableViewDelegate,UITableViewDataSource, NewsTableInput> tableView;
 @property (weak, nonatomic) IBOutlet UITableView *newsTable;
 
 @end
