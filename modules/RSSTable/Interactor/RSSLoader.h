@@ -1,23 +1,35 @@
-//
-//  RSSLoader.h
-//  RSSReaderTDD
-//
-//  Created by Все будет хорошо on 30/10/16.
-//  Copyright © 2016 codelobber. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
+#import "RSSXMLParser.h"
 
 @protocol RSSLoaderInput <NSObject>
 
-- (void) loadRSSWithUrl:(NSString *) urlString;
-- (void) parseRSSData: (NSData * ) data;
+- (void) loadRSSFromUrl:(NSString * _Nonnull) urlString;
 
 @end
 
-@interface RSSLoader : NSObject <RSSLoaderInput>
+@protocol RSSLoaderOutput <NSObject>
+
+/**
+ 
+ Метод сообщает об успешном загрузке и парсинге новостей
+ */
+- (void) didLoadAndParseNewsInArray:(NSArray * _Nonnull) newsArray;
+
+/**
+ 
+ Метод сообщает об ошибке при загрузке или парсинге новостей
+ */
+- (void) didReciveError:(NSError * _Nullable) error;
 
 
+@end
+
+@interface RSSLoader : NSObject <RSSLoaderInput,RSSXMLParserDelegate>
+
+@property (nullable, nonatomic, weak) id <RSSLoaderOutput> output;
+@property (nullable, nonatomic, weak) id <RSSXMLParserInput,NSXMLParserDelegate> parser;
+
+- (void) parseData:(NSData *) data;
 
 @end
 

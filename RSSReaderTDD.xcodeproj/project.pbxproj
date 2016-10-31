@@ -17,9 +17,10 @@
 		2C5564371DC60DBE00EB2576 /* RSSReaderTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5564361DC60DBE00EB2576 /* RSSReaderTDDTests.m */; };
 		2CD535D81DC690F500995EB9 /* RSSLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535D71DC690F500995EB9 /* RSSLoader.m */; };
 		2CD535DC1DC6941000995EB9 /* RSSLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535DB1DC6941000995EB9 /* RSSLoaderTests.m */; };
-		2CD535DF1DC6966A00995EB9 /* RSSXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535DE1DC6966A00995EB9 /* RSSXMLParser.m */; };
 		2CD535E21DC6975800995EB9 /* RSSXMLParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535E11DC6975800995EB9 /* RSSXMLParserTests.m */; };
 		2CD535E91DC6B5A100995EB9 /* NewsThing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535E81DC6B5A100995EB9 /* NewsThing.m */; };
+		2CD535EA1DC6D2DB00995EB9 /* RSSXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD535DE1DC6966A00995EB9 /* RSSXMLParser.m */; };
+		2CD535ED1DC6F44D00995EB9 /* demoRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2CD535EB1DC6F43C00995EB9 /* demoRSS.xml */; };
 		35D48A40E389FAA31D6AA3A7 /* RSSTableRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3DDAA748DAE92A77EC8E97 /* RSSTableRouter.m */; };
 		3D36C2145D50B1CFF3631FF9 /* RSSTableRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 703EB18567632F1DDD83DAA2 /* RSSTableRouterTests.m */; };
 		522CCF6A72BA2B57394156E0 /* RSSTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D92ABABDCAB2AB296046EFA5 /* RSSTableViewControllerTests.m */; };
@@ -67,6 +68,7 @@
 		2CD535E11DC6975800995EB9 /* RSSXMLParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSXMLParserTests.m; sourceTree = "<group>"; };
 		2CD535E71DC6B5A100995EB9 /* NewsThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsThing.h; sourceTree = "<group>"; };
 		2CD535E81DC6B5A100995EB9 /* NewsThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsThing.m; sourceTree = "<group>"; };
+		2CD535EB1DC6F43C00995EB9 /* demoRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = demoRSS.xml; path = ../../../../../Desktop/demoRSS.xml; sourceTree = "<group>"; };
 		3F2F2CC3E7C4F13ABFC7663D /* RSSTableInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSTableInteractor.m; sourceTree = "<group>"; };
 		4B5A7069CFF593D182DCA171 /* Pods-Tests-RSSReaderTDD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-RSSReaderTDD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-RSSReaderTDD/Pods-Tests-RSSReaderTDD.debug.xcconfig"; sourceTree = "<group>"; };
 		4CF9DD7F62F659BAEC62DA23 /* RSSTableInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSTableInteractorInput.h; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		2C55641C1DC60DBD00EB2576 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2CD535EB1DC6F43C00995EB9 /* demoRSS.xml */,
 				2C55641D1DC60DBD00EB2576 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -432,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD535ED1DC6F44D00995EB9 /* demoRSS.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD535EA1DC6D2DB00995EB9 /* RSSXMLParser.m in Sources */,
 				2C5564211DC60DBD00EB2576 /* AppDelegate.m in Sources */,
 				2C55641E1DC60DBD00EB2576 /* main.m in Sources */,
 				2BDA411CF83A320B7F477E8B /* RSSTableAssembly.m in Sources */,
@@ -559,7 +564,6 @@
 				2CD535E21DC6975800995EB9 /* RSSXMLParserTests.m in Sources */,
 				2CD535DC1DC6941000995EB9 /* RSSLoaderTests.m in Sources */,
 				3D36C2145D50B1CFF3631FF9 /* RSSTableRouterTests.m in Sources */,
-				2CD535DF1DC6966A00995EB9 /* RSSXMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

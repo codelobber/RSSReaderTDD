@@ -14,4 +14,17 @@
 
 #pragma mark - Методы RSSTableInteractorInput
 
+- (void) parse{
+    NSLog(@" == ");
+    [_rssloader loadRSSFromUrl:@"https://www.gazeta.ru/export/rss/lenta.xml"];
+}
+
+- (void) didLoadAndParseNewsInArray:(NSArray *)newsArray{
+    NSLog(@"%i - %@",[newsArray count], newsArray);
+}
+
+- (void) didReciveError:(NSError *)error{
+    NSLog(@" %@",error);
+}
+
 @end

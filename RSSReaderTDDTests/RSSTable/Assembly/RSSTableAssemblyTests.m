@@ -16,6 +16,8 @@
 #import "RSSTablePresenter.h"
 #import "RSSTableInteractor.h"
 #import "RSSTableRouter.h"
+#import "RSSLoader.h"
+#import "RSSXMLParser.h"
 
 @interface RSSTableAssemblyTests : RamblerTyphoonAssemblyTests
 
@@ -92,10 +94,12 @@
     // given
     Class targetClass = [RSSTableInteractor class];
     NSArray *protocols = @[
-                           @protocol(RSSTableInteractorInput)
+                           @protocol(RSSTableInteractorInput),
+                           @protocol(RSSLoaderOutput)
                            ];
     NSArray *dependencies = @[
-                              RamblerSelector(output)
+                              RamblerSelector(output),
+                              RamblerSelector(rssloader)
                               ];
     RamblerTyphoonAssemblyTestsTypeDescriptor *descriptor = [RamblerTyphoonAssemblyTestsTypeDescriptor descriptorWithClass:targetClass
                                                                                                               andProtocols:protocols];
@@ -124,6 +128,51 @@
     // when
     id result = [self.assembly routerRSSTable];
 
+    // then
+    [self verifyTargetDependency:result
+                  withDescriptor:descriptor
+                    dependencies:dependencies];
+}
+
+- (void)testThatAssemblyCreatesServiceRssLoader {
+    // given
+    Class targetClass = [RSSLoader class];
+    NSArray *protocols = @[
+                           @protocol(RSSLoaderInput),
+                           @protocol(RSSXMLParserDelegate)
+                           ];
+    NSArray *dependencies = @[
+                              RamblerSelector(output),
+                              RamblerSelector(parser)
+                              ];
+    RamblerTyphoonAssemblyTestsTypeDescriptor *descriptor = [RamblerTyphoonAssemblyTestsTypeDescriptor descriptorWithClass:targetClass
+                                                                                                              andProtocols:protocols];
+    
+    // when
+    id result = [self.assembly serviceRSSLoader];
+    
+    // then
+    [self verifyTargetDependency:result
+                  withDescriptor:descriptor
+                    dependencies:dependencies];
+}
+
+- (void)testThatAssemblyCreatesServiceRssXMLParser {
+    // given
+    Class targetClass = [RSSXMLParser class];
+    NSArray *protocols = @[
+                           @protocol(NSXMLParserDelegate),
+                           @protocol(RSSXMLParserInput)
+                           ];
+    NSArray *dependencies = @[
+                              RamblerSelector(delegate)
+                              ];
+    RamblerTyphoonAssemblyTestsTypeDescriptor *descriptor = [RamblerTyphoonAssemblyTestsTypeDescriptor descriptorWithClass:targetClass
+                                                                                                              andProtocols:protocols];
+    
+    // when
+    id result = [self.assembly serviceRSSXMLParser];
+    
     // then
     [self verifyTargetDependency:result
                   withDescriptor:descriptor

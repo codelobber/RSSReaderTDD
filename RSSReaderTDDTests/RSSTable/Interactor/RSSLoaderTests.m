@@ -19,9 +19,9 @@
     
     self.service = [[RSSLoader alloc] init];
     
-//    self.mockOutput = OCMProtocolMock(@protocol(RSSTableInteractorOutput));
-//    
-//    self.interactor.output = self.mockOutput;
+    self.mockOutput = OCMProtocolMock(@protocol(RSSLoaderOutput));
+    
+    self.service.output = self.mockOutput;
 }
 
 - (void)tearDown {
@@ -32,10 +32,47 @@
     [super tearDown];
 }
 
-#pragma mark - Тестирование методов RSSTableInteractorInput
+#pragma mark - Тестирование методов RSSLoader
 
-- (void) testTryLoadWrongURL{
-    [_service loadRSSWithUrl:@"wrongUrl"];
+// проверить статусы ошибок
+//- (void) testError{
+//    // given
+//    NSString * url = @"qqw";
+//    NSError * error = nil;
+//    error = [NSError errorWithDomain:@"NSCocoaErrorDomain" code:256 userInfo:@{@"NSURL":url}];
+//    
+//    // when
+//    //[_service reciveError:error];
+//    [_service loadRSSFromUrl:url];
+//    
+//    // then
+//    OCMVerify([self.mockOutput didReciveError:error]);
+//}
+
+- (void) testError{
+    // given
+    NSArray * array  = @[];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"demoRSS" ofType:@"xml"];
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    
+    [_service parseData:data];
+    
+    XCTestExpectation *documentOpenExpectation = [self expectationWithDescription:@"document open"];
+
+    
+//    dispatch_time_t delay = dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC * 12);
+//    dispatch_after(delay, dispatch_get_main_queue(), ^(void){
+//        [documentOpenExpectation fulfill];
+//    });
+    
+    // when
+    
+
+    // then
+    [self waitForExpectationsWithTimeout:14 handler:^(NSError *error) {
+        OCMVerify([self.mockOutput didLoadAndParseNewsInArray:array]);
+    }];
+//    OCMVerify([self.mockOutput didLoadAndParseNewsInArray:array]);
     
 }
 

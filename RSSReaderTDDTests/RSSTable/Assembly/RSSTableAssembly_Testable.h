@@ -12,6 +12,9 @@
 @class RSSTableInteractor;
 @class RSSTablePresenter;
 @class RSSTableRouter;
+@class RSSLoader;
+@class RSSXMLParser;
+
 
 @interface RSSTableAssembly ()
 
@@ -19,5 +22,7 @@
 - (RSSTablePresenter *)presenterRSSTable;
 - (RSSTableInteractor *)interactorRSSTable;
 - (RSSTableRouter *)routerRSSTable;
+- (RSSLoader *)serviceRSSLoader;
+- (RSSXMLParser *)serviceRSSXMLParser;
 
 @end
