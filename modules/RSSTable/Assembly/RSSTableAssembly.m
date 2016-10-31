@@ -14,6 +14,7 @@
 #import "RSSTableRouter.h"
 #import "RSSLoader.h"
 #import "RSSXMLParser.h"
+#import "NewsTableManger.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -26,6 +27,8 @@
                                                     with:[self presenterRSSTable]];
                               [definition injectProperty:@selector(moduleInput)
                                                     with:[self presenterRSSTable]];
+                              [definition injectProperty:@selector(tableView)
+                                                    with:[self viewNewsTableManager]];
                           }];
 }
 
@@ -75,6 +78,14 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(delegate)
                                                     with:[self serviceRSSLoader]];
+                          }];
+}
+
+- (NewsTableManger *) viewNewsTableManager {
+    return [TyphoonDefinition withClass:[NewsTableManger class]
+                          configuration:^(TyphoonDefinition *definition) {
+                              [definition injectProperty:@selector(output)
+                                                    with:[self viewRSSTable]];
                           }];
 }
 

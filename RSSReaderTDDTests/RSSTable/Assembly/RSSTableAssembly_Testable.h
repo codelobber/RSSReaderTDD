@@ -14,6 +14,7 @@
 @class RSSTableRouter;
 @class RSSLoader;
 @class RSSXMLParser;
+@class NewsTableManger;
 
 
 @interface RSSTableAssembly ()
@@ -24,5 +25,6 @@
 - (RSSTableRouter *)routerRSSTable;
 - (RSSLoader *)serviceRSSLoader;
 - (RSSXMLParser *)serviceRSSXMLParser;
+- (NewsTableManger *)viewNewsTableManager;
 
 @end

@@ -18,6 +18,7 @@
 #import "RSSTableRouter.h"
 #import "RSSLoader.h"
 #import "RSSXMLParser.h"
+#import "NewsTableManger.h"
 
 @interface RSSTableAssemblyTests : RamblerTyphoonAssemblyTests
 
@@ -48,10 +49,13 @@
     // given
     Class targetClass = [RSSTableViewController class];
     NSArray *protocols = @[
-                           @protocol(RSSTableViewInput)
+                           @protocol(RSSTableViewInput),
+                           @protocol(NewsTableOutput)
                            ];
     NSArray *dependencies = @[
-                              RamblerSelector(output)
+                              RamblerSelector(output),
+                              RamblerSelector(tableView)
+                              
                               ];
     RamblerTyphoonAssemblyTestsTypeDescriptor *descriptor = [RamblerTyphoonAssemblyTestsTypeDescriptor descriptorWithClass:targetClass
                                                                                                               andProtocols:protocols];
@@ -172,6 +176,29 @@
     
     // when
     id result = [self.assembly serviceRSSXMLParser];
+    
+    // then
+    [self verifyTargetDependency:result
+                  withDescriptor:descriptor
+                    dependencies:dependencies];
+}
+
+- (void)testThatAssemblyCreatesViewNewsTableManager {
+    // given
+    Class targetClass = [NewsTableManger class];
+    NSArray *protocols = @[
+                           @protocol(NewsTableInput),
+                           @protocol(UITableViewDelegate),
+                           @protocol(UITableViewDataSource)
+                           ];
+    NSArray *dependencies = @[
+                              RamblerSelector(output)
+                              ];
+    RamblerTyphoonAssemblyTestsTypeDescriptor *descriptor = [RamblerTyphoonAssemblyTestsTypeDescriptor descriptorWithClass:targetClass
+                                                                                                              andProtocols:protocols];
+    
+    // when
+    id result = [self.assembly viewNewsTableManager];
     
     // then
     [self verifyTargetDependency:result
