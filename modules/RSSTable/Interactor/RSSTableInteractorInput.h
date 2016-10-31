@@ -10,4 +10,5 @@
 
 @protocol RSSTableInteractorInput <NSObject>
 
+
 @end

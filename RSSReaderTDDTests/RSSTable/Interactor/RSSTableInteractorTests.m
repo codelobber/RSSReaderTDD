@@ -45,4 +45,18 @@
 
 #pragma mark - Тестирование методов RSSTableInteractorInput
 
+- (void) testThatPasrserCanFinishWork {
+    // given
+    NSArray * testArray = nil;
+    
+    // when
+    [self.interactor parse];
+    
+    
+    // then
+    //XCTAssert(true);
+    OCMVerify([self.interactor  didLoadAndParseNewsInArray:testArray]);
+//    OCMVerify([self.mockOutput didLoadAndParseNewsInArray:testArray]);
+}
+
 @end

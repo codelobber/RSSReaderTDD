@@ -12,6 +12,8 @@
 #import "RSSTableInteractor.h"
 #import "RSSTablePresenter.h"
 #import "RSSTableRouter.h"
+#import "RSSLoader.h"
+#import "RSSXMLParser.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -32,6 +34,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterRSSTable]];
+                              [definition injectProperty:@selector(rssloader)
+                                                    with:[self serviceRSSLoader]];
                           }];
 }
 
@@ -52,6 +56,25 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewRSSTable]];
+                          }];
+}
+
+- (RSSLoader *) serviceRSSLoader {
+    return [TyphoonDefinition withClass:[RSSLoader class]
+                          configuration:^(TyphoonDefinition *definition) {
+                              [definition injectProperty:@selector(output)
+                                                    with:[self interactorRSSTable]];
+                              [definition injectProperty:@selector(parser)
+                                                    with:[self serviceRSSXMLParser]];
+                              
+                          }];
+}
+
+- (RSSXMLParser *) serviceRSSXMLParser {
+    return [TyphoonDefinition withClass:[RSSXMLParser class]
+                          configuration:^(TyphoonDefinition *definition) {
+                              [definition injectProperty:@selector(delegate)
+                                                    with:[self serviceRSSLoader]];
                           }];
 }
 
