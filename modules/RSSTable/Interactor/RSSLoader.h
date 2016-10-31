@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RSSLoader : NSObject
+@protocol RSSLoaderInput <NSObject>
+
+- (void) loadRSSWithUrl:(NSString *) urlString;
+- (void) parseRSSData: (NSData * ) data;
 
 @end
+
+@interface RSSLoader : NSObject <RSSLoaderInput>
+
+
+
+@end
+
+

@@ -7,7 +7,33 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NewsThing.h"
 
-@interface RSSXMLParser : NSObject
+@protocol RSSXMLParserDelegate <NSObject>
+
+/**
+ 
+ Метод сообщает об ошибке парсинга
+ */
+- (void) parseErrorOccurred:(NSError *) parseError;
+
+/**
+ 
+ Метод сообщает об завершении парсинга и возвращает Массив
+ */
+- (void) didFinishParsingArray:(NSArray *) arrayXML;
+
 
 @end
+
+@interface RSSXMLParser : NSObject <NSXMLParserDelegate>
+
+@property (nullable,nonatomic,strong) NSMutableArray * news;
+@property (nullable,nonatomic,strong) NSString * currentValue;
+@property (nullable,nonatomic,strong) NewsThing * newsThing;
+
+@property (nullable,nonatomic,weak) id <RSSXMLParserDelegate> delegate;
+
+@end
+
+

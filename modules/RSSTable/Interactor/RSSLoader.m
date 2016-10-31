@@ -10,4 +10,14 @@
 
 @implementation RSSLoader
 
+- (void) loadRSSWithUrl:(NSString *) urlString {
+
+}
+
+- (void) parseRSSData: (NSData * )  data{
+    
+}
+
+//- ()
+
 @end

@@ -12,6 +12,7 @@
 #import "RSSTableInteractor.h"
 #import "RSSTablePresenter.h"
 #import "RSSTableRouter.h"
+#import "RSSLoader.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -32,6 +33,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterRSSTable]];
+                              [definition injectProperty:@selector(rssloader)
+                                                    with:[self serviceRSSLoader]];
                           }];
 }
 
@@ -52,6 +55,12 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewRSSTable]];
+                          }];
+}
+
+- (RSSLoader *) serviceRSSLoader {
+    return [TyphoonDefinition withClass:[RSSLoader class]
+                          configuration:^(TyphoonDefinition *definition) {
                           }];
 }
 

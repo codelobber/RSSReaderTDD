@@ -7,11 +7,13 @@
 //
 
 #import "RSSTableInteractorInput.h"
+#import "RSSLoader.h"
 
 @protocol RSSTableInteractorOutput;
 
 @interface RSSTableInteractor : NSObject <RSSTableInteractorInput>
 
 @property (nonatomic, weak) id<RSSTableInteractorOutput> output;
+@property (nonatomic, weak) id <RSSLoaderInput> rssloader;
 
 @end
