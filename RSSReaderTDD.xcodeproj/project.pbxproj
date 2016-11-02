@@ -14,8 +14,8 @@
 		2C17FC341DC70BBF00005F03 /* RSSXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17FC311DC70BBF00005F03 /* RSSXMLParser.m */; };
 		2C17FC381DC70C1B00005F03 /* RSSLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17FC361DC70C1B00005F03 /* RSSLoaderTests.m */; };
 		2C17FC391DC70C1B00005F03 /* RSSXMLParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17FC371DC70C1B00005F03 /* RSSXMLParserTests.m */; };
-		2C17FC3C1DC70C5E00005F03 /* demoRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2C17FC3A1DC70C4F00005F03 /* demoRSS.xml */; };
 		2C17FC411DC7416A00005F03 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C17FC401DC7416A00005F03 /* blank.png */; };
+		2C17FC451DCA536700005F03 /* demoRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2C17FC441DCA536700005F03 /* demoRSS.xml */; };
 		2C55641E1DC60DBD00EB2576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C55641D1DC60DBD00EB2576 /* main.m */; };
 		2C5564211DC60DBD00EB2576 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5564201DC60DBD00EB2576 /* AppDelegate.m */; };
 		2C5564271DC60DBD00EB2576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5564251DC60DBD00EB2576 /* Main.storyboard */; };
@@ -60,8 +60,8 @@
 		2C17FC311DC70BBF00005F03 /* RSSXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSXMLParser.m; sourceTree = "<group>"; };
 		2C17FC361DC70C1B00005F03 /* RSSLoaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSLoaderTests.m; sourceTree = "<group>"; };
 		2C17FC371DC70C1B00005F03 /* RSSXMLParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSXMLParserTests.m; sourceTree = "<group>"; };
-		2C17FC3A1DC70C4F00005F03 /* demoRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = demoRSS.xml; path = ../../../../../Desktop/demoRSS.xml; sourceTree = "<group>"; };
 		2C17FC401DC7416A00005F03 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		2C17FC441DCA536700005F03 /* demoRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = demoRSS.xml; sourceTree = "<group>"; };
 		2C5564191DC60DBD00EB2576 /* RSSReaderTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReaderTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C55641D1DC60DBD00EB2576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C55641F1DC60DBD00EB2576 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -180,10 +180,10 @@
 		2C55641C1DC60DBD00EB2576 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C17FC441DCA536700005F03 /* demoRSS.xml */,
 				2C17FC401DC7416A00005F03 /* blank.png */,
 				2C55642A1DC60DBD00EB2576 /* LaunchScreen.storyboard */,
 				2C55642D1DC60DBD00EB2576 /* Info.plist */,
-				2C17FC3A1DC70C4F00005F03 /* demoRSS.xml */,
 				2C55641D1DC60DBD00EB2576 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -457,7 +457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C17FC3C1DC70C5E00005F03 /* demoRSS.xml in Resources */,
+				2C17FC451DCA536700005F03 /* demoRSS.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

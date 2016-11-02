@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <language>ru</language>
+    <title>Lenta.ru : Новости</title>
+    <description>Новости, статьи, фотографии, видео. Семь дней в неделю, 24 часа в сутки</description>
+    <link>http://lenta.ru</link>
+    <image>
+      <url>http://assets.lenta.ru/small_logo.png</url>
+      <title>Lenta.ru</title>
+      <link>http://lenta.ru</link>
+      <width>134</width>
+      <height>22</height>
+    </image>
+    <atom:link rel="self" type="application/rss+xml" href="http://lenta.ru/rss"/>
+<item>
+  <guid>https://lenta.ru/news/2016/10/30/yarr_harr/</guid>
+  <title>Пиратская партия Исландии показала на выборах третий результат</title>
+  <link>https://lenta.ru/news/2016/10/30/yarr_harr/</link>
+  <description>
+    <![CDATA[Пиратская партия Исландии показала на парламентских выборах третий результат, набрав чуть больше 14 процентов голосов. Победу одерживает правящая правоцентристская «Партия независимости» (29,2 процента), второе место у «Левого зеленого движения» (15,8 процента). ]]>
+  </description>
+  <pubDate>Sun, 30 Oct 2016 13:51:00 +0300</pubDate>
+  <enclosure url="https://icdn.lenta.ru/images/2016/10/30/13/20161030133911130/pic_330413a8868cfa3ba8829338fc3e01ff.jpg" length="65286" type="image/jpeg"/>
+  <category>Мир</category>
+</item>
+<item>
+  <guid>https://lenta.ru/news/2016/10/30/himorugie/</guid>
+  <title>В Алеппо рассказали о применении боевиками химоружия</title>
+  <link>https://lenta.ru/news/2016/10/30/himorugie/</link>
+  <description>
+    <![CDATA[Террористы применили в Алеппо химическое оружие, сообщили РИА Новости в ополчении города. «Боевики обстреляли нас и военных в районе академии Асада самодельными ракетами с отравляющим газом. Какой именно химикат был использован, пока затрудняемся сказать», — отметил собеседник агентства.]]>
+  </description>
+  <pubDate>Sun, 30 Oct 2016 13:44:00 +0300</pubDate>
+  <enclosure url="https://icdn.lenta.ru/images/2016/10/30/13/20161030134701760/pic_b41e831964db907ec88556ef373ac08e.jpg" length="71799" type="image/jpeg"/>
+  <category>Мир</category>
+</item>
+<item>
+  <guid>https://lenta.ru/news/2016/10/28/idlib/</guid>
+  <title>Лавров назвал вбросом домыслы о причастности России к удару по школе в Идлибе</title>
+  <link>https://lenta.ru/news/2016/10/28/idlib/</link>
+  <description>
+    <![CDATA[Министр иностранных дел Сергей Лавров заявил, что обвинения против российской и сирийской авиации в ударе по школе в городе Идлиб являются «сфабрикованным информационным вбросом». Атака на учебное заведение была совершена 27 октября. По информации ЮНИСЕФ, жертвами стали 28 человек.]]>
+  </description>
+  <pubDate>Fri, 28 Oct 2016 14:01:00 +0300</pubDate>
+  <enclosure url="https://icdn.lenta.ru/images/2016/10/28/14/20161028140015519/pic_f9b77469d9bd7db79b09a4abb1bb9cbe.jpg" length="30181" type="image/jpeg"/>
+  <category>Мир</category>
+</item>
+<item>
+  <guid>https://lenta.ru/news/2016/10/28/cowsgrazing/</guid>
+  <title>В крымском Красноперекопске запретили водить коров по улицам</title>
+  <link>https://lenta.ru/news/2016/10/28/cowsgrazing/</link>
+  <description>
+    <![CDATA[Горсовет крымского Красноперекопска запретил пасти и прогонять коров по улицам города. Также теперь нельзя купать и поить  животных у водопроводных колонок и в других местах общественного пользования. Домашний скот может находиться только на земельном участке хозяина. Нарушителям грозит уголовная ответственность. ]]>
+  </description>
+  <pubDate>Fri, 28 Oct 2016 14:01:00 +0300</pubDate>
+  <enclosure url="https://icdn.lenta.ru/images/2016/10/28/13/20161028134736687/pic_852dfedca0e774e46a10d1d9d5a8b94f.jpg" length="48470" type="image/jpeg"/>
+  <category>Россия</category>
+</item>
+  </channel>
+</rss>
